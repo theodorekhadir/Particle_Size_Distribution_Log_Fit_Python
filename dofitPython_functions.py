@@ -5,6 +5,8 @@ Use the function 'MAIN_FIT' to run the fitting algorithm, with:
 Dp: diameter sizes,
 distrib: particle number size distribution
 The argument finescanning can be set to 'no' to avoid the fine scanning step and speed up the fitting
+The function returns the fitted parameters for the 3 modes in the following order:
+Dpg, sig, Ntot (each of these outputs the length equals to the number of modes), 
 
 This code was originally coded in MATLAB by Tareq Hussein, September 2006
 
@@ -14,6 +16,9 @@ Contact info: theodore.khadir@aces.su.se
 
 from scipy import interpolate
 import numpy as np
+import warnings
+# don't show warnings
+warnings.filterwarnings("ignore")
 
 def MAIN_FIT(Dp, distrib, TOL_1N = 0.010, TOL_2N = 0.005, finescanning='yes'):
     """
@@ -57,7 +62,7 @@ def MAIN_FIT(Dp, distrib, TOL_1N = 0.010, TOL_2N = 0.005, finescanning='yes'):
     model_param[:3] = DO_FIT_eliminate_null(model_param[:3])
     # Reduce the number of modes if some modes are overlaping
     model_param = Reduce_3Mto2M(Dp, model_param,TOL_1N,TOL_2N,distrib)
-    return model_param
+    return model_param[:3] # doesn't return the limit and LIMIT
     
 def DO_FIT_400_3M(Dp, distrib, finescanning='yes'):
     """ 
@@ -1032,7 +1037,6 @@ def Dpg_scan_1M(distrib, Dp, N, limit_, LIMIT_, sig_, Dp_min, Dp_max):
 #   #if didnt improve the least mean squares, and run a finescanning
     if ((limit == limit_) or (LIMIT == LIMIT_)):
         sig = sig_
-        Ntot = Ntot_
                                
     return [Dpg,sig,Ntot,limit,LIMIT,dlogDpg]
 
