@@ -8,3 +8,6 @@ The algorithm chooses the best number of modes based on overlapping modes and RM
 For now, it has been developped for <4modes only.
 
 ![alt text](https://github.com/theodorekhadir/dofit_python/blob/master/test.png)
+
+If you want to contribute to this module or have a question, email me:
+theodore.khadir@aces.su.se
