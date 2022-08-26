@@ -6,3 +6,5 @@ This module is a Python adaptation of the particle number size distribution fitt
 The algorithm chooses the best number of modes based on overlapping modes and RMSE.
 
 For now, it has been developped for <4modes only.
+
+![alt text](https://github.com/theodorekhadir/dofit_python/blob/master/test.png)
