@@ -9,5 +9,5 @@ For now, it has been developped for <4modes only.
 
 ![alt text](https://github.com/theodorekhadir/dofit_python/blob/master/test.png)
 
-If you want to contribute to this module or have a question, don't hesitate email me:
+If you want to contribute to this module or have a question, don't hesitate to email me:
 theodore.khadir@aces.su.se
