@@ -18,7 +18,6 @@ Supports up to 4 modes.
 
 Currently, the module is only able to handle less than 4 modes. We plan to extend this in future updates.
 This version does not include multiprocessing capabilities.
-Planned Updates:
 
 **In the next versions**
 
