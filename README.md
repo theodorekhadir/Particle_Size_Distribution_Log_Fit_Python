@@ -1,5 +1,7 @@
 # Particle_Size_Distribution_Log_Fit_Python
 
+DOI (version 0.1.0): https://doi.org/10.5281/zenodo.8017043
+
 This module is a Python adaptation of the particle number size distribution (PNSD) fitting module DOFIT developped by Tareq Hussein in MATLAB, September 2006 
 (http://www.borenv.net/BER/archive/pdfs/ber10/ber10-337.pdf).
 
