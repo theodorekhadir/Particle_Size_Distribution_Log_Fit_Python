@@ -487,10 +487,12 @@ def FIX_nucl(Dp,distrib,Dpg_,sig_,Ntot_,limit_,LIMIT_):
     F = np.zeros((3,1))*np.nan
     N = 18
     Dpg_1 = np.logspace(np.log10(16*(10**(-9))), np.log10(2*(10**(-9))), N, base=10.0, endpoint=True)
+    Dpg_2 = np.logspace(np.log10(25*(10**(-9))), np.log10(90*(10**(-9))), N, base=10.0, endpoint=True)
     sig_min = 1.1
     sig_max = 2.0
     dsig    = (sig_max - sig_min) / N
     sig_1 = np.arange(sig_min, sig_max+dsig, dsig)
+    sig_2 = np.arange(sig_min, sig_max+dsig, dsig)
     limit = limit_
     LIMIT = LIMIT_
     
