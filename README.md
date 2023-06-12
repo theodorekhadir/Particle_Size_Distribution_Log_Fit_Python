@@ -25,7 +25,7 @@ We plan to incorporate multiprocessing to speed up the processing time and impro
 
 **How to cite?**
 
-If you use this module in your research, please cite it. A Digital Object Identifier (DOI) has been generated for this module, which you can use for citation purposes in academic work: 
+A Digital Object Identifier (DOI) has been generated for this module, which you can use for citation purposes in academic work: 
 
 *DOI (version 0.1.0)*: https://doi.org/10.5281/zenodo.8017043
 
